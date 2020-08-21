@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases</title>
+    <link rel="stylesheet" href="./static/main.css">
+    <link rel="stylesheet" href="./static/cases.css">
+    
+    <script src="/static/jquery.js"></script>
+    
+</head>
+<body>
+    
+    <div id="main">
+        <nav>
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/about">COVID-19</a></li>
+                <li><a href="/">Cases</a></li>
+                <LI><a href="/contact">Contacts</a></LI>
+            </ul>
+        </nav>
+    </div>
+    <h1 id="head">NATIONAL CORONA CASES UPDATE </h1>
+
+    <div id="tcases">
+        <div id="nc" class="record" >
+            <h2>New Cases</h2>
+            <h2 class="digi" id="dig1">691</h2>
+        </div>
+        <div class="record" id="ac">
+            <h2>Active Cases</h2>
+            <h2 class="digi" id="dig2">3,095</h2>
+        </div>
+        <div class="record" id="cc">
+            <h2>Confirmed Cases</h2>
+            <h2 class="digi" id="dig3">31,057</h2>
+        </div>
+        <div class="record" id="rv">
+            <h2>Recovered</h2>
+            <h2 class="digi" id="dig4">27,801</h2>
+        </div>
+        <div class="record" id="dth">
+            <h2>Deaths </h2>
+            <h2 class="digi" id="dig5">161</h2>
+        </div>
+    </div>
+
+    <h3 style="clear: both; text-align: center;">REGIONAL CASES CHART</h3>
+    <table >
+        <tr>
+            <th>REGIONS</th>
+            <th>NEW CASES</th>
+            <th>RECOVERED</th>
+            <th>ACTIVE</th>
+        </tr>
+        <tr>
+            <th>Ahafo</th>
+            <td>121</td>
+            <td>53</td>
+            <td>68</td>
+        </tr>
+        <tr>
+            <th>Ashanti</th>
+            <td>7866</td>
+            <td>7068</td>
+            <td>736</td>
+        </tr>
+        <tr>
+            <th>Bono</th>
+            <td>426</td>
+            <td>418</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th>Bono East</th>
+            <td>434</td>
+            <td>375</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <th>Cenral</th>
+            <td>1349</td>
+            <td>1157</td>
+            <td>182</td>
+        </tr>
+        <tr>
+            <th>Eastern</th>
+            <td>1214</td>
+            <td>1153</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <th>Greater Accra</th>
+            <td>16716</td>
+            <td>14848</td>
+            <td>1802</td>
+        </tr>
+        <tr>
+            <th>Northern</th>
+            <td>302</td>
+            <td>295</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Noth East</th>
+            <td>9</td>
+            <td>7</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Oti</th>
+            <td>172</td>
+            <td>129</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <th>Savannah</th>
+            <td>57</td>
+            <td>56</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Upper East</th>
+            <td>282</td>
+            <td>279</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Upper West</th>
+            <td>75</td>
+            <td>73</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Volta</th>
+            <td>577</td>
+            <td>437</td>
+            <td>139</td>
+        </tr>
+        <tr>
+            <th>Western</th>
+            <td>2539</td>
+            <td>2,286</td>
+            <td>251</td>
+        </tr>
+        <tr>
+            <th>Western North</th>
+            <td>298</td>
+            <td>293</td>
+            <td>5</td>
+        </tr>
+        <tr >
+            <th style="background-color: gray;color: white;">TOTAL</th>
+            <td style="background-color: gray; color: white;">32,437</td>
+            <td style="background-color: gray; color: white;">28,927</td>
+            <td style="background-color: gray; color: white;">3,349</td>
+        </tr>
+    </table>
+
+    <footer>
+        <div class="fotcont">
+            <h3 style="color: white;">Social Media Handles</h3>
+            <a href="https://www.instagram.com/dekin_graphix?r=nametag"><img src="/images/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/Dekin-Graphix-112864050458209"><img src="/images/facebook.png" alt="facebook"></a>
+            <a href="https://wa.me/+23326195074"><img src="/images/whatsapp.png" alt="whatsapp"></a>
+        </div>
+        &copy; copyright 26 <sup>th</sup> july, 2020
+    </footer>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('#head').hide()
+
+            $('.digi').hide()
+
+            $('#nc').hover(function(){
+                $('#dig1').slideToggle(150)
+            })
+
+            $('#ac').hover(function(){
+                $('#dig2').slideToggle(200)
+            })
+            $('#cc').hover(function(){
+                $('#dig3').slideToggle(200)
+            })
+            $('#rv').hover(function(){
+                $('#dig4').slideToggle(200)
+            })
+            $('#dth').hover(function(){
+                $('#dig5').slideToggle(200)
+            })
+
+            $('#head').fadeIn(5000);
+
+           
+        })
+    </script>
+    
+</body>
+</html>
